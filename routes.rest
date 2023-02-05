@@ -1,69 +1,66 @@
-// LOCALHOST 
-### get all contacts
+ // LOCALHOST 
+### 
 GET http://localhost:8080/contacts
 
-### Get single contact by Id
-GET http://localhost:8080/contacts/63cc041a1b1ea223f39615c1
+### 
+GET http://localhost:8080/contacts/63cbb002a8c8ee2727aa2c16
 
-### Create a contact 
-POST http://localhost:8080/contacts/ HTTP/1.1
-content-type: application/json
-
-{
-    "firstName": "Vernon",
-    "lastName": "Blye",
-    "email": "vblye@test.com",
-    "favoriteColor": "Blue",
-    "birthday": "03/28/1960" 
-  }
-  
-### Update a contact 
-PUT http://localhost:8080/contacts/63d009485248b2af338e1f6c HTTP/1.1
-content-type: application/json
+### 
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
 
 {
-    "firstName": "Vernon",
-    "lastName": "Blye",
-    "email": "vblye@test.com",
-    "favoriteColor": "Purple",
-    "birthday": "03/28/1960" 
-  }
-
-### Delete a contact
-DELETE http://localhost:8080/contacts/63d009485248b2af338e1f6c
-
-
-// PRODUCTION Deploy 
-
-### Get all contacts
-GET https://cse341-w2.onrender.com/contacts/ 
-
-### Get a single contact by Id
-GET https://cse341-w2.onrender.com/contacts/63de262c882fc17d74f6d5e7 
-
-### Create a contact 
-POST https://cse341-w2.onrender.com/contacts/ HTTP/1.1
-content-type: application/json
-
-{
-    "firstName": "Vernon",
-    "lastName": "Blye",
-    "email": "vblye@test.com",
-    "favoriteColor": "Purple",
-    "birthday": "03/28/1960" 
+"firstName":"Koffi",
+"lastName":"Odilor", 
+"email":"somorvi@test.com", 
+"favoriteColor":"White", 
+"birthday":"01/12/1985"
 }
-  
-### Update a contact 
-PUT https://cse341-w2.onrender.com/contacts/63deab1a12dbce785846d80f HTTP/1.1
-content-type: application/json
+### 
+PUT http://localhost:8080/contacts/63cbb0f9a8c8ee2727aa2c17 HTTP/1.1 content-type: application/json
 
 {
-    "firstName": "Vernon",
-    "lastName": "Blye",
-    "email": "vblye@test.com",
-    "favoriteColor": "Grape",
-    "birthday": "03/28/1960" 
+"firstName":"Djomo", 
+"lastName":"Anicet", 
+"email":"danicet@test.com", 
+"favoriteColor":"yellow", 
+"birthday":"04/05/1987"
+} 
+
+###  
+DELETE http://localhost:8080/contacts/63cbb1f0a8c8ee2727aa2c18 HTTP/1.1
+
+
+
+// For Render 
+
+
+GET https://cse341-les2.onrender.com/contacts   
+
+### 
+
+GET https://cse341-les2.onrender.com/contacts/63cbb002a8c8ee2727aa2c16
+
+### 
+POST https://cse341-les2.onrender.com/contacts HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Koffi",
+"lastName":"Odilor",
+"email":"somorvi@test.com", 
+"favoriteColor":"White", 
+"birthday":"01/12/1985"
 }
 
-### Delete a contact
-DELETE https://cse341-w2.onrender.com/contacts/63deab1a12dbce785846d80f
+###
+PUT https://cse341-les2.onrender.com/contacts/63cbb0f9a8c8ee2727aa2c17 HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Djomo",
+"lastName":"Anicet", 
+"email":"danicet@test.com",
+"favoriteColor":"pink",
+"birthday":"04/05/1987"
+} 
+
+### 
+DELETE https://cse341-les2.onrender.com/contacts/63cbb1f0a8c8ee2727aa2c18 HTTP/1.1 
