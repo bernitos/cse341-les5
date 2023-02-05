@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Contacts API',
   },
-  host: 'cse341-les4.onrender.com',
+  host: 'https://adja.onrender.com',
   schemes: ['http', 'https'],
 };
 
